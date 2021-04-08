@@ -1,0 +1,121 @@
+/*
+    Lab 2
+    
+    Flexbox lab
+    Author: Dylan Chohan
+    Date: March 12th, 2021   
+
+    Filename: Flexbox.css
+*/
+
+html{
+    background-color: cornflowerblue;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    background-color: cornsilk;
+}
+
+footer{
+    height: 40px;
+    width: 100%;
+    background-color: cornsilk;
+}
+
+nav{
+    min-height: 40px;
+    text-align: center;
+    display: flexbox;
+}
+
+
+footer{
+    float: left;
+}
+
+
+            /*PHONE*/
+@media only screen and (max-width: 480px){
+    article{
+        float: left;
+        text-align: center;
+        background-color: chocolate;
+    }
+
+    div{
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+
+            /*TABLET*/
+@media only screen and (min-width: 481px){
+    nav div{
+        text-align: center;
+        font-size: 30px;
+    }
+    article{
+        width: 80%;
+        float: left;
+        text-align: center;
+        background-color: chocolate;
+    }
+    
+    article div{
+        font-size: 60px;
+    }
+
+    aside{
+        width: 20%;
+        height: 100%;
+        padding-top: 95px;
+        padding-bottom: 95px;
+        text-align: center;
+        background-color: coral;
+        float: left;
+    }
+}
+
+
+            /*DESKTOP*/
+
+@media only screen and (min-width: 769px){
+    nav div{
+        text-align: center;
+        font-size: 30px;
+        display: inline-block;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    article{
+        width: 80%;
+        float: left;
+        text-align: center;
+        display: inline;
+        background-color: chocolate;
+    }
+
+    article div{
+        text-align: center;
+        font-size: 30px;
+        display: inline-block;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    aside{
+        width: 20%;
+        height: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        text-align: center;
+        background-color: coral;
+        float: left;
+    }
+}
